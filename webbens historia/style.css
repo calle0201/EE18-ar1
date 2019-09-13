@@ -1,0 +1,10 @@
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    height: 467px;
+}
+body {
+    background: rgb(109, 191, 216);
+}
