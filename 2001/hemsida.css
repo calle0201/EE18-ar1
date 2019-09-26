@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Turret+Road&display=swap');
+.caption {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+body {
+    background: black url("./bilder/jorden.jpg") no-repeat fixed center bottom;
+    background-size: 400px;
+}
+h1{
+    color:white;
+    font: 80px  'Turret Road', cursive;
+    margin-top: 15px;
+    background-color: rgb(91, 91, 241);
+    border: 1px solid white;
+    padding: 30px;
+}
+h2 {
+    color: white;
+    font: 30px sans-serif;
+    margin-top: 50px;
+    background-color: crimson;
+    border: 1px solid white;
+    padding: 30px;
+}

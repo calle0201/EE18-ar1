@@ -1,0 +1,20 @@
+.text{
+    margin-left: 150px;
+}
+body {
+    background-image: url("./bilder/skane.jpg");
+    background-repeat: no-repeat;
+}
+h1 {
+    color: white;
+    font: 50px serif;
+    font-style: italic;
+}
+p {
+color: white;
+font: 20px serif;
+font-style: italic;
+}
+img {
+width:  100px;
+}

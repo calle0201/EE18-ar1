@@ -1,0 +1,19 @@
+.content {
+    max-width: 500px;
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 200px;
+  }
+body{
+    background-image: url("./bilder/jorden.jpg");
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center -550px;
+}
+h1 {
+color: white;
+font-size: 100px;
+font-family: sans-serif;
+}
