@@ -1,0 +1,42 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sida1 {
+background-image: url("./bilder/Japanese_Wave_Seamless_Pattern.jpg");
+}
+.sida2 {
+    background-image: url("./bilder/91gSjoLgp+L._SX466_.jpg");   
+}
+.sida3 {
+    background-image: url("./bilder/iss_5646_03450.jpg")
+}
+div {
+background-color: white;
+max-width: 450px;
+margin: 150px auto  0px auto;
+border: 3px dashed black;
+border-radius: 10px;
+padding: 40px;
+}
+h1 {
+font-size: 50px;
+
+}
+p {
+font-size: 30px;
+margin: 20px 0px 20px 0px;
+}
+a {
+font-size: 30px;
+color: black;
+text-decoration: none;
+}
