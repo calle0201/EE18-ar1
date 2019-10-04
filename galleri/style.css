@@ -43,7 +43,7 @@ float:left;
 margin: 20px 5px;
 }
 .bildtext {
-
+clear: both;
 }
 .clearfix {
     overflow: auto;
