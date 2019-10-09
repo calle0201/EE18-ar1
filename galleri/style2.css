@@ -55,7 +55,10 @@ border-radius: 10px;
 .bildtext {
 padding: 5px;
 font-size: 20px;
-
+}
+.kalla {
+    margin: 20px 0;
+    font-style: italic;
 }
 .vänster {
     float:left;
