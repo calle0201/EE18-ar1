@@ -12,7 +12,13 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* CSS clearfix mot box-kollaps */
-
+.clearfix::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
 
 body {
 background-color: black;
@@ -61,8 +67,4 @@ font-size: 20px;
 }
 .texthöger {
     text-align: right;
-}
-hr {
-    clear:both;
-    visibility: hidden;
 }
