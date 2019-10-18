@@ -1,0 +1,58 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+
+}
+.container {
+
+}
+.container h1 {
+
+}
+/* meny */
+.container .meny {
+
+}
+.container .meny li {
+
+}
+.container .meny a {
+
+}
+.container .meny a:hover {
+
+}
+.container .meny .aktiv {
+
+}
+/* inhåll på sida */
+.container h2 {
+
+}
+.container figure {
+
+}
+.container figure img {
+    
+}
+.container figure figcaption {
+    
+}
+.container p {
+
+}
+.container .sidfot {
+
+}
+.container .sidfot a {
+
+}

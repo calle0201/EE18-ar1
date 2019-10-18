@@ -1,3 +1,4 @@
 {
-    "vscode-w3cvalidation.javaHome": "C:\\Program Files (x86)\\Java\\jdk1.8.0_162"
+    "vscode-w3cvalidation.javaHome": "C:\\Program Files (x86)\\Java\\jdk1.8.0_162",
+    "C_Cpp.errorSquiggles": "Disabled"
 }
