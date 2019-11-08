@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>kontaktformulär</h1>
+        <form action="get">
+            <label for="fnamn">Förnamn</label>
+            <input id="fnamn" type="text" placeholder="t.ex Anders" required>
+
+            <label for="Enamn">Efternamn</label>
+            <input id="Enamn" type="text" placeholder="t.ex anderson" required>
+
+            <label for="gatuadress">gatuadress</label>
+            <input type="text" id="gatuadress" placeholder="t.ex Crafords väg 11" required>
+
+            <label for="postnr">postnr</label>
+            <input type="text" id="postnr" placeholder="t.ex 12345" required>
+
+            <label for="epost">epost</label>
+            <input type="email" id="epost" placeholder="xxxx.xxxxx@gmail.com">
+
+            <label for="kon">kön</label>
+            <div class="kon">
+                <label for="man"><input type="radio" id="man" name="kon"> Man</label>
+                <label for="kvinna"><input type="radio"  id="kvinna" name="kon"> Kvinna</label>
+                <label for="annat"><input type="radio"  id="annat" name="kon"> Annat</label>
+            </div>
+            <label for="allergi">allergi</label>
+            <div class="allergi">
+                <label for="notter"><input type="checkbox" id="notter" name="allergi"> nötter</label>
+                <label for="kvinna"><input type="checkbox"  id="kvinna" name="allergi"> Kvinna</label>
+                <label for="annat"><input type="checkbox"  id="annat" name="allergi"> Annat</label>
+            </div>
+
+            <button>skicka</button>
+        </form>
+    </div>
+</body>
+</html>

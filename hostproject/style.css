@@ -1,0 +1,123 @@
+/* Enkel CSS-reset */
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+background-image: url(./bilder/halloween_pumpkin_spooky_127836_2560x1080.jpg);
+background-repeat: no-repeat;
+background-size: auto;
+ 
+}
+.index {
+ background-image: url(./bilder/neven-krcmarek-2Ni0lCRF9bw-unsplash.jpg);
+ background-repeat: no-repeat;
+ background-size: 1920px 1080px; 
+}
+.meny {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5C1009;
+    text-transform: uppercase;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 30px;
+}
+.meny li {
+    float: left;
+    
+}
+.meny li a {
+    display: block;
+    color: #FE9B13;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+.meny li a:hover {
+    background-color: #810806;
+}
+.sidocontent {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #5C1009 ;
+    padding: 10px;
+    border: 3px solid #810806;
+    border-radius: 20px;
+}
+.sidocontent h1 {
+    margin: 20px;
+font-size: 60px;
+color: #fe9b13 ;
+text-align: center;
+font-family: 'Liu Jian Mao Cao', cursive;
+}
+.sidocontent p {
+    color: #fe9b13 ;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Satisfy', cursive;
+    padding: 10px;
+}
+.sidocontent img {
+    width: 71%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #F9C10E;
+    border-radius: 20px;
+}
+.undertext {
+font-size: 15px;
+color: #fe9b13 ;
+margin: 20px;
+text-align: left;
+
+}
+.undertext a {
+    text-decoration: underline;
+    color: #fe9b13;
+}
+.nuvarande {
+    background-color: #810806;
+}
+.gridcontainer {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 65px;
+    padding: 65px;
+    padding-right: 20px;
+    color: #fe9b13 ;
+}
+.gridcontainer .grid-item {
+    border: 3px solid #810806;
+    background-color: #5C1009;
+    border-radius: 20px;
+}
+.gridcontainer .grid-item h1 {
+    margin: 20px;
+font-size: 60px;
+font-family: 'Liu Jian Mao Cao', cursive;
+}
+.gridcontainer .grid-item p {
+    font-size: 20px;
+    font-family: 'Satisfy', cursive;
+    padding: 10px;
+    text-align: left;
+}
+.gridcontainer .grid-item img {
+    width: 71%;
+    border:  3px solid #F9C10E;
+    border-radius: 20px;
+}
