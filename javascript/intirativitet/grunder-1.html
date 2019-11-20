@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>grunder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="fråganamn()">ange namn</button>
+    <button onclick="frågaÅlder()">ange ålder</button>
+    <button onclick="frågaAdress()">ange adress</button>
+    <button onclick="sammanfattning()">sammanfattning</button>
+    <script>
+        var namn;
+        var ålder;
+        var adress;
+
+        function fråganamn() {
+            namn = prompt("hej vad heter du?");
+            console.log(namn);
+        }
+
+        function frågaÅlder() {
+            ålder = prompt("hur gammal är du?");
+            console.log(ålder);
+        }
+
+        function frågaAdress() {
+            var adress = prompt("var bor du?");
+            console.log(adress);
+
+        }
+
+        function sammanfattning() {
+            alert("hej " + namn + "du är " + ålder + "år gammal och bor på gatan" + adress)
+
+        }
+    </script>
+</body>
+</html>

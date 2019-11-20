@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        //dagens datum
+        var idag = new Date();
+        
+        //läs in födelsedatum
+        var föddtext = prompt("när är du född?");
+        //omvandla till ett date object
+        var född = new Date(föddtext);
+        //räkna ut år mellan födelse och idag
+        var antalår = idag.getFullYear() - född.getFullYear();
+        //skottår ger problem
+        var antalMånader = idag.getMonth() - född.getMonth();
+        var antalDagar = idag.getDate() - född.getDate();
+
+        if (antalMånader < 0) {
+            antalår = antalår - 1
+        } else {
+            if (antalMånader == 0) {
+                if (antalDagar < 0) {
+                    antalår = antalår - 1
+                }
+            }
+        }
+
+        //
+        alert("du är " + antalår + " år gammal")
+    </script>
+</body>
+</html>

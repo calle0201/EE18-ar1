@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        //dagens datum
+        var idag = new Date();
+        console.log(idag);
+        
+        var klockan = "klockan är " + idag.getHours() + ":" + idag.getMinutes();
+        console.log(klockan);
+
+        console.log(idag.getDay());
+        
+        console.log(idag.getMonth());
+        
+        //på ren svenksa
+        console.log(idag.toLocaleDateString('sv-SE'));
+    </script>
+</body>
+</html>

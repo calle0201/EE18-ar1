@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>intro till js</h1>
+    </div>
+    <script>
+    //slumpa tal
+        var slumptal = Math.ceil(Math.random() * 10 );
+        console.log("slumptal = " + slumptal);
+        
+    //läs av gisning
+        var svar = prompt("Ditt svar");
+
+    //är gissning = svar?
+    if (svar == slumptal) {
+        // rätt svar
+        alert("Ditt svar var rätt (" + svar + ")");
+        location.replace("https://www.reddit.com")
+    } else {
+        //fel svar
+        alert("Ditt svar:" + svar + " slumptal:" + slumptal);
+        location.replace("https://www.youtube.com")
+    }
+
+        
+        
+
+
+    </script>
+</body>
+</html>

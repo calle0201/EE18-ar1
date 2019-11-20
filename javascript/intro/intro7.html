@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        //slumpa tal 1 - 10 *2
+        var tal1 = Math.ceil(Math.random() * 10);
+        var tal2 = Math.ceil(Math.random() * 10);
+        //räkna ut summan
+        var summa = tal1 + tal2
+        console.log(summa)
+        //läs in gissning
+        var gissning = prompt("ditt svar")
+        //rätt svar 
+        if (gissning == summa) {
+            alert("ditt svar var korrekt")
+        } else {
+            alert("ditt svar var fel")
+        }
+        
+        //fel svar
+    </script>
+</body>
+</html>

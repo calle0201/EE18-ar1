@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>grunder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="epost()">ange epost</button>
+    <script>
+        //läs in epost
+        var epost1
+        var nyepost
+
+        function epost() {
+            epost1 = prompt("skriv din epost här")
+            nyepost = epost1.replace('@', '(at)')
+            alert("din nya epost är" + nyepost)
+        }
+
+        //byt @ till at
+        //skriv ut resultat
+       
+    </script>
+
+</body>
+</html>
