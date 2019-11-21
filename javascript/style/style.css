@@ -102,3 +102,9 @@ body {
     background: #FFF;
     padding: 20px;
 }
+
+/* mörkt läge */
+.dark {
+    background: #000000;
+    color: #fff;
+}
