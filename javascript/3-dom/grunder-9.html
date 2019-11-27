@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container ">
+
+        <img id="bild1" src="./bilder/F1.jpg" alt="F1 pitstop">
+  
+
+    </div>
+    <script>
+        const elementfoto = document.querySelector("#bild1");
+
+        setInterval(flasha, 10000);
+
+        function flasha() {
+            elementfoto.classList.toggle("huerotate");
+        }
+    </script>
+</body>
+</html>

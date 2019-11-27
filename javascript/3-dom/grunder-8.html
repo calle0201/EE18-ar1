@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container kol3">
+
+        <img id="bild1" src="./bilder/F1.jpg" alt="F1 pitstop">
+        <img id="bild2" src="./bilder/wonky_tree.jpg" alt="wonky house">
+        <img id="bild3" src="./bilder/cherry_tree.jpg" alt="cherry tree">
+
+
+        <button id="bild1" onclick="svartVitt1()">Svartvit</button>
+        <button id="bild1" onclick="sepia()">sepia</button>
+        <button id="bild1" onclick="huerotate()">huerotate</button>
+        <button onclick="blink1()">starta epelepsi atttack</button>
+
+    </div>
+    <script>
+        const elmentBild1 = document.querySelector("#bild1");
+        const elmentBild2 = document.querySelector("#bild2");
+        const elmentBild3 = document.querySelector("#bild3");
+
+        function blink1() {
+            setInterval(svartVitt1, 500);
+        }
+
+        function svartVitt1() {
+            elmentBild1.classList.toggle("grayscale");
+
+        }
+
+        function sepia() {
+            elmentBild2.classList.toggle("sepia");
+
+        }
+
+        function huerotate() {
+            elmentBild3.classList.toggle("huerotate");
+
+        }
+    </script>
+</body>
+</html>

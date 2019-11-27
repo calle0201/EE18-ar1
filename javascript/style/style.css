@@ -28,15 +28,15 @@ body {
     border: 1px solid;
 }
 .kol2 {
-    margin: 1em 0;
+    margin: 1em auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
 }
 .kol3 {
-    margin: 1em 0;
+    margin: 1em auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
 }
 .container label {
@@ -109,14 +109,23 @@ body {
     color: #fff;
 }
 
-.container i.fa{
+.container i.fa {
     cursor: pointer;
     display: block;
-    margin-bottom:10px ;
+    margin-bottom: 10px;
 }
 .container .dold {
     display: none;
 }
 .container .synlig {
     display: block;
+}
+.container .grayscale {
+    filter: grayscale(90%);
+}
+.container .huerotate {
+    filter: hue-rotate(90deg);
+}
+.container .sepia {
+    filter: sepia(60%);
 }
