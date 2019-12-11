@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container ">
+        <h1 onclick="bytH1()">tryck här</h1>
+        <p onclick="bytP()">tryck på mig med</p>
+
+
+    </div>
+    <script>
+        //element vi använder
+        const elementH1 = document.querySelector("h1");
+        const elementp = document.querySelector("p");
+
+
+        function bytH1() {
+            elementH1.textContent = "Santa lucia";
+        };
+
+        function bytP() {
+            elementp.innerHTML = "<p> Sul mare luccica <br> Lastro dargento <br> Placid è londa <br> Prospero il vento </p> <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/i2-Q_ObdE-4\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+        }
+    </script>
+</body>
+</html>

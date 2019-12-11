@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* styla calender */
+body {
+    background: url("./bilder/julgran.jpg");
+}
+
+/* allt i mitten */
+html, body {
+    height: 100%;
+}
+.mitten {
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    background: red;
+    width: 700px;
+   
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-align: center;
+    
+}
+
+h1 {
+font-size: 80px     ;
+}
+.calander {
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+gap: 25px;
+padding: 10px;
+justify-content: space-around;
+}
+.ruta {
+    background: green;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 1s;
+}
+.ruta:hover {
+    background: rgb(0, 184, 0) no-repeat center;
+    box-shadow: 0 0 10px #fff;
+}
+.klapp1 {
+    font-size: 0;
+    background: url("./bilder/darth.jpg") center no-repeat;
+    background-size: 80px 80px;
+    animation: tona 2s ;
+    pointer-events: none;
+    
+
+}
+.klappText {
+    font: 12px sans-serif;
+    background: none;
+    padding: 10px;
+    animation: tona 2s ;
+    pointer-events: none;
+    color: white;
+}
+
+@keyframes tona {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

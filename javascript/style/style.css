@@ -129,3 +129,6 @@ body {
 .container .sepia {
     filter: sepia(60%);
 }
+.container .blinka {
+    color: white;
+}

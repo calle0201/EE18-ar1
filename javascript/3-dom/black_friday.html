@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>black friday</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body style="background-image: url('./bilder/levi-midnight-q7nLuW8MAgw-unsplash.jpg');">
+    <div class=" container" style="background: black;">
+        <h1 class="blinka" style=" text-align: center; font-size: 60px;"> BLACK FRIDAY</h1>
+        <img id="i1" src="./bilder/sale.png" alt="sale skylt">
+        <div class="kol2">
+            <img id="i2" class=dold" src="./bilder/wanhaoi3+.png" alt="wanhaoi3+">
+            <img id="i3" class=" dold" src="./bilder/prsuai3mk3s.jpg" alt="i3mk3s">
+        </div>
+    </div>
+    <script>
+        //element vi arbetar med
+        const elementimg1 = document.querySelector("#i1");
+        const elementimg2 = document.querySelector("#i2");
+        const elementimg3 = document.querySelector("#i3");
+        const elementH1 = document.querySelector("h1");
+
+        setInterval(blinka, 700);
+
+        elementimg2.classList.add("dold");
+        setTimeout(visaBild, 1000);
+
+        function visaBild() {
+            setTimeout(taBortBild, 1000)
+            elementimg1.classList.add("dold");
+
+        }
+
+        function taBortBild() {
+            elementimg2.classList.remove("dold");
+            elementimg3.classList.remove("dold");
+        }
+
+        function blinka() {
+            elementH1.classList.toggle("blinka");
+        }
+    </script>
+</body>
+</html>

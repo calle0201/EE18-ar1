@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container ">
+        <h1>infoga text i sidan</h1>
+        <p id="p1">hemlgit mobilnummer</p>
+        <p id="p2">hemlig address</p>
+        <div id="avatar">
+            avatar
+        </div>
+        <button onmousedown="visaMobilNr()" onmouseup="döljNr()">visa mobilnr</button>
+        <button onmouseover="visaAdress()" onmouseout="döljAdress()">visa adress</button>
+        <button onclick="visaBild()">Visa avatar</button>
+    </div>
+    <script>
+        //element vi använder
+        const elementP1 = document.querySelector("#p1");
+        const elementP2 = document.querySelector("#p2");
+        const elementAvatar = document.querySelector("#avatar")
+
+        function visaNr() {
+            //infoga mobilnr
+            elementP1.textContent = "0700922345";
+        }
+
+        function visaMobilNr() {
+            elementP1.textContent = "0700922345";
+        }
+
+        function döljNr() {
+            elementP1.textContent = "hemlgit mobilnummer";
+        }
+
+        function visaAdress() {
+            elementP2.textContent = "ängsvägen 40b";
+        }
+
+        function döljAdress() {
+            elementP2.textContent = "visa adress";
+        }
+
+        function visaBild() {
+            elementAvatar.innerHTML = "<img src=\"./bilder/copyright_breach.jpg\" alt=\"tachanka\">";
+        }
+    </script>
+</body>
+</html>
