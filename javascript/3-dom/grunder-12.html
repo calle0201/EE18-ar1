@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container ">
+        <button onclick="byt()">clicka på mig</button>
+        
+    </div>
+    <script>
+        //element vi använder
+        const elementB = document.querySelector("button")
+
+        function byt() {
+            elementB.innerHTML = "<h1>something</h1> <br> <img src=\"./bilder/something.gif\" alt=\"idk\">";
+        }
+    </script>
+</body>
+</html>

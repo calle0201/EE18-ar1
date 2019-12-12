@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container ">
+        <h1>läsa av input rutor</h1>
+
+        <h2>input</h2>
+        <label >Namn</label>
+        <input id="forNamn" type="text">
+        <label >Efternamn</label>
+        <input id="efterNamn" type="text">
+        <button onclick="skicka()">skicka</button>
+
+        <h2>output</h2>
+        <p></p>
+        
+    </div>
+    <script>
+        //element vi använder
+        const elementP = document.querySelector("p");
+        const elementRuta1 = document.querySelector("#forNamn");
+        const elementRuta2 = document.querySelector("#efterNamn");
+
+        function skicka() {
+            //läs av input
+            var text = elementRuta1.value
+            var efterNamn = elementRuta2.value
+            //skriva in i p
+            elementP.textContent = "Ditt namn är " + text + " " + efterNamn;
+        }
+    </script>
+</body>
+</html>
