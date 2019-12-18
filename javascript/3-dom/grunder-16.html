@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container ">
+        <h1> omvandla c till F</h1>
+
+        <h2>input</h2>
+        <label>ange temp i C</label>
+        <input id="answer" type="text">
+        <button onclick="skicka()">skicka</button>
+
+        <h2>output</h2>
+        <p></p>
+        <meter min="0" max="100" low="33" high="66" optimum="80" value="0"></meter>
+
+    </div>
+    <script>
+        //element vi använder
+        const elementI = document.querySelector("#answer");
+        const elementP = document.querySelector("p");
+        const elementM = document.querySelector("meter");
+
+
+
+
+        function skicka() {
+            var tempC = elementI.value;
+            var tempF = tempC * 9 / 5 + 32;
+            
+
+                elementP.textContent = tempF
+                elementM.value = tempF;
+        }
+    </script>
+</body>
+</html>

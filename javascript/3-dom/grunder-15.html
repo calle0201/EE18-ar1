@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container ">
+        <h1>läsa av input rutor</h1>
+
+        <h2>input</h2>
+        <label >Gissa ett tal 1-10</label>
+        <input id="answer" type="text">
+        <button onclick="skicka()">skicka</button>
+
+        <h2>output</h2>
+        <p></p>
+        
+    </div>
+    <script>
+        //element vi använder
+       const elementI = document.querySelector("#answer");
+       const elementP = document.querySelector("p");
+       var slumptal = Math.ceil(Math.random() * 10);
+       console.log(slumptal);
+       
+     
+
+       function skicka() {
+        var svar = elementI.value;
+       console.log(svar)
+            if (svar == slumptal) {
+                elementP.textContent = "Ditt svar är korrekt"
+            } else {
+                elementP.textContent = "Ditt svar är inkorrekt"
+            }
+
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container ">
+        <h1>spamskydd</h1>
+
+        <h2>input</h2>
+        <label>ange temp i C</label>
+        <input id="answer" type="text">
+        <button onclick="skicka()">skicka</button>
+
+        <h2>output</h2>
+        <p></p>
+
+
+    </div>
+    <script>
+        //element vi använder
+        const elementI = document.querySelector("#answer");
+        const elementP = document.querySelector("p");
+        const elementL = document.querySelector("label")
+        var tal1 = Math.ceil(Math.random() * 10);
+        var tal2 = Math.ceil(Math.random() * 10);
+        
+
+        elementL.textContent = "vad är " + tal1 + " + " + tal2 + "?";
+
+
+        function skicka() {
+            var summa = tal1 + tal2;
+            if (summa == elementI.value) {
+                elementP.textContent = "Du är inte en robot"
+            } else {
+                elementP.textContent = "Du är en dum robot"
+            }
+        }
+    </script>
+</body>
+</html>
