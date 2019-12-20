@@ -27,4 +27,5 @@ function rotateRight() {
      }
      
      elementImg.src = "./bilder/foto" + number + ".jpg";
+     elementP2.textContent = number;
 }
