@@ -132,3 +132,14 @@ body {
 .container .blinka {
     color: white;
 }
+.fa-thumbs-up {
+    font-size: 48px;
+    color: green;
+    visibility: hidden;
+    
+}
+.fa-thumbs-down {
+    font-size: 48px;
+    color: red;
+    visibility: hidden;
+}
