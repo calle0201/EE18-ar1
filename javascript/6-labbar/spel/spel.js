@@ -42,14 +42,14 @@ function nyFråga() {
     slumptal = Math.floor(Math.random() * 10);
     console.log(slumptal);
     if (varv <= 0) {
-       elementBody.style.visibility = "hidden"
+        elementBody.style.visibility = "hidden"
     } else {
         varv--;
     }
     if (poäng == 10) {
         elementBody.innerHTML = "du van";
     } else {
-        elementBody.innerHTML = "du förlorade" ;
+        elementBody.innerHTML = "du förlorade";
     }
 
     elementFråga.value = kort[slumptal];
