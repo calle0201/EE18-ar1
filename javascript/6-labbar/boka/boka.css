@@ -1,0 +1,23 @@
+
+body {
+    background: url(./bilder/melissa-walker-horn-jsEftnpVh1U-unsplash.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.container {
+    width: 500px;
+    padding: 2em;
+    margin: 3em auto;
+    background:#fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 00 12px #f0e9d1;
+}
+.container fieldset {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 0 0 10px 20px;
+}
+.container legend, .container select, .container input {
+    width: auto ;
+}
