@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        //element 
+        const eCanvas = document.querySelector("canvas")
+       
+        //höjd och längd på canvas
+        eCanvas.width = 800;
+        eCanvas.height = 600;
+
+        //ritmotorn
+        var ctx = eCanvas.getContext("2d");
+    
+
+
+
+ctx.beginPath()
+ctx.strokeStyle = 'black'
+
+ctx.arc(350, 175, 100, 100, Math.PI * 2,true )
+ctx.moveTo(290, 215)
+ctx.moveTo(400,205)
+ctx.arc(350, 205, 50,0, Math.PI )
+ctx.moveTo(300, 160)
+ctx.arc(290,160,10,100, Math.PI * 2,true)
+ctx.moveTo(410, 160)
+ctx.arc(400,160,10,100, Math.PI * 2,true)
+ctx.stroke();
+
+    </script>
+</body>
+</html>

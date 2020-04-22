@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <div class="col2">
+        <canvas></canvas>
+        <div>
+            <h1>Flytta Mario</h1>
+            <div class="col3">
+                <br><button id="b1">&Uparrow;</button><br>
+                <button id="b2">&Leftarrow;</button><br>
+                <button id="b3">&Rightarrow;</button><br>
+                <button id="b4">&Downarrow;</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+        const eUp = document.querySelector("#b1")
+        const eLeft = document.querySelector("#b2")
+        const eRight = document.querySelector("#b3")
+        const eDown = document.querySelector("#b4")
+        //element 
+        const eCanvas = document.querySelector("canvas")
+
+        //höjd och längd på canvas
+        eCanvas.width = 1300;
+        eCanvas.height = 1000;
+
+        //ritmotorn
+        var ctx = eCanvas.getContext("2d");
+
+        //bild
+        var mario = new Image();
+        mario.src = './picture/mario.png'
+
+
+        var posX = 150
+        var posY = 150
+        loop()
+
+        //functions
+
+        //rita ut bilden
+        function drawMario() {
+       
+           
+            ctx.drawImage(mario, posX, posY)
+          
+        }
+
+        //animations loop
+        function loop() {
+            ctx.clearRect(0,0,1300,1000)
+            drawMario()
+            
+            requestAnimationFrame(loop);
+        }
+
+        //lyssna på input
+        eRight.addEventListener('click', function() {
+            posX += 2;
+        })
+        eLeft.addEventListener('click', function() {
+            posX -= 2;
+        })
+        eDown.addEventListener('click', function() {
+            posY += 2;
+        })
+        eUp.addEventListener('click', function() {
+            
+            posY -= 2;
+        })
+    </script>
+</body>
+</html>

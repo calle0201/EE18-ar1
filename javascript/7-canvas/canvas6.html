@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        //element 
+        const eCanvas = document.querySelector("canvas")
+
+        //höjd och längd på canvas
+        eCanvas.width = 800;
+        eCanvas.height = 600;
+
+        //ritmotorn
+        var ctx = eCanvas.getContext("2d");
+
+
+
+
+        //välj färg
+        ctx.fillStyle = "lightblue";
+        ctx.strokeStyle = "red";
+
+
+        //rita 5 fyrkanter
+        for (var i = 100; i <= 500; i += 100) {
+            ctx.fillRect(i, 100, 50,50)
+        }
+        ctx.fillStyle = "lightpink"
+        for (var i = 100; i <= 500; i += 100) {
+            ctx.fillRect(i, 200, 50,50)
+        }
+        ctx.fillStyle = "lightgreen"
+        for (var i = 100; i <= 500; i += 100) {
+            ctx.fillRect(i, 300, 50,50)
+        }
+    </script>
+</body>
+</html>

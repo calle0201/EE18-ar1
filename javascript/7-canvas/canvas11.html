@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <div class="col2">
+        <canvas></canvas>
+        <div>
+            <h1>Flytta Mario</h1>
+            <div class="col3">
+                <br><button id="b1">&Uparrow;</button><br>
+                <button id="b2">&Leftarrow;</button><br>
+                <button id="b3">&Rightarrow;</button><br>
+                <button id="b4">&Downarrow;</button><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        const eUp = document.querySelector("#b1")
+        const eLeft = document.querySelector("#b2")
+        const eRight = document.querySelector("#b3")
+        const eDown = document.querySelector("#b4")
+        //element 
+        const eCanvas = document.querySelector("canvas")
+
+        //höjd och längd på canvas
+        eCanvas.width = 1300;
+        eCanvas.height = 1000;
+
+        //ritmotorn
+        var ctx = eCanvas.getContext("2d");
+
+        //bild
+        var mario = new Image();
+        mario.src = './picture/mario.png'
+        var bowser = new Image();
+        bowser.src = './picture/Paper-Bowser-icon.png'
+
+        var mariposX = 150;
+        var marioposY = 150;
+        var bowserX = Math.ceil(Math.random()* 800)
+        var bowserY = Math.ceil(Math.random()* 800)
+        var dx = 1, dy = 1;
+        loop()
+
+        //functions
+
+        //rita ut bilden
+        function drawMario() {
+            bowserX += dx;
+            bowserY += dy;
+//if bowser touch edge bounce
+if (bowserY > 810) {
+    dy = -dy
+}
+if (bowserX > 1050) {
+    dx = -dx
+}
+if (bowserY < -30) {
+    dy = -dy
+}
+if (bowserX < 0) {
+    dx = -dx
+}
+
+            ctx.drawImage(mario, mariposX, marioposY)
+            ctx.drawImage(bowser, bowserX, bowserY)
+        }
+
+        //animations loop
+        function loop() {
+            ctx.clearRect(0, 0, 1300, 1000)
+            drawMario()
+
+            requestAnimationFrame(loop);
+        }
+
+        //lyssna på input
+        eRight.addEventListener('click', function() {
+            mariposX += 2;
+        })
+        eLeft.addEventListener('click', function() {
+            mariposX -= 2;
+        })
+        eDown.addEventListener('click', function() {
+            marioposY += 2;
+        })
+        eUp.addEventListener('click', function() {
+
+            marioposY -= 2;
+        })
+
+        //kolla vilken knapp man trycker
+        window.addEventListener('keydown', function(e) {
+            switch (e.key) {
+                case 'ArrowRight':
+                mariposX += 4;
+                    break;
+                case 'ArrowLeft':
+                mariposX -= 4;
+                    break;
+                case 'ArrowUp':
+                    marioposY -= 4;
+                    break;
+                case 'ArrowDown':
+                    marioposY += 4;
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

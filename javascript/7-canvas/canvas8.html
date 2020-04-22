@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        //element 
+        const eCanvas = document.querySelector("canvas")
+
+        //höjd och längd på canvas
+        eCanvas.width = 1200;
+        eCanvas.height = 1200;
+
+        //ritmotorn
+        var ctx = eCanvas.getContext("2d");
+
+
+        ctx.strokeRect(100, 100, 800, 800)
+
+        //välj färg
+        ctx.fillStyle = "black"
+        ctx.font = "24px sans-serif"
+        for (var i = 100; i <= 800; i += 200) {
+            ctx.fillRect(i, 100, 100, 100)
+        }
+        for (var i = 200; i <= 800; i += 200) {
+            ctx.fillRect(i, 200, 100, 100)
+        }
+        for (var i = 100; i <= 800; i += 200) {
+            ctx.fillRect(i, 300, 100, 100)
+        }
+        for (var i = 200; i <= 800; i += 200) {
+            ctx.fillRect(i, 400, 100, 100)
+        }
+        for (var i = 100; i <= 800; i += 200) {
+            ctx.fillRect(i, 500, 100, 100)
+        }
+        for (var i = 200; i <= 800; i += 200) {
+            ctx.fillRect(i, 600, 100, 100)
+        }
+        for (var i = 100; i <= 800; i += 200) {
+            ctx.fillRect(i, 700, 100, 100)
+        }
+        for (var i = 200; i <= 800; i += 200) {
+            ctx.fillRect(i, 800, 100, 100)
+        }
+        var tal= 65
+for (var x = 145; x<= 900; x += 100) {
+var bokstav = String.fromCharCode(tal)
+ctx.fillText(bokstav,x, 80)
+tal++
+}
+var siffra = 1;
+for (var y = 155; y<= 900; y += 100) {
+ctx.fillText(siffra,80, y,)
+siffra++
+}
+    </script>
+</body>
+</html>

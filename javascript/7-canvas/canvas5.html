@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        //element 
+        const eCanvas = document.querySelector("canvas")
+
+        //höjd och längd på canvas
+        eCanvas.width = 800;
+        eCanvas.height = 600;
+
+        //ritmotorn
+        var ctx = eCanvas.getContext("2d");
+
+
+
+
+        //välj färg
+        ctx.fillStyle = "lightblue";
+        ctx.strokeStyle = "red";
+
+
+        var x = 100;
+        var y = 200;
+        ctx.fillStyle = "black"
+        ctx.fillRect(x, y, 100, 50)
+
+
+        y = 300;
+        ctx.fillStyle = "green"
+        ctx.fillRect(x, y, 100, 50)
+
+        y = 500;
+        ctx.font = "100px sans-serif"
+        ctx.strokeText("hello world", x, y)
+        ctx.fillText("hello world", x, y)
+
+        /* var mustang = new Image();
+        mustang.src = "./picture/mustang_PNG62.png"
+        mustang.addEventListener("load", function() {
+            ctx.drawImage(mustang, 0, 0 )
+        }) */
+
+        x = 100
+        y = 500
+        var w = 70
+        var h = 50
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(x, y, w, h)
+
+        //sudda
+        ctx.clearRect(0, 0, 800, 600)
+
+
+        //loopar
+        for (var i = 1; i <= 5; i++) {
+            console.log(i);
+
+        }
+        for (var i = 100; i <= 500; i += 100) {
+            console.log(i);
+
+        }
+
+
+        //rita 5 rektanglar
+        for (var i = 1; i <= 5; i++) {
+
+            x = 100
+            y = 100
+            var w = 70
+            var h = 50
+            ctx.fillStyle = "yellow"
+            ctx.fillRect(x, y, w, h)
+        }
+
+
+        for (var i = 100; i <= 500; i += 100) {
+            x = 200
+            var w = 70
+            var h = 50
+            ctx.fillStyle = "yellow"
+            ctx.fillRect(x, i, w, h)
+        }
+    </script>
+</body>
+</html>
