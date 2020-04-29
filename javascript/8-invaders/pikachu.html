@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+    <canvas id="test"></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+        const eCanvas = document.querySelector("#test");
+        eCanvas.width = 1200;
+        eCanvas.height= 1000;
+        var ctx = eCanvas.getContext("2d");
+        /* ****************************** */
+        /*           Objekten             */
+        /* ****************************** */
+        var key 
+
+        /* Ladda in bilderna */
+
+       
+var figurX = Math.random()*1200
+var figurY = 0
+var mario = {
+    x: Math.random()*1200,
+    y: 0,
+    bild: new Image(),   
+}
+var smith = {
+    x: Math.random()*1200,
+    y: 0,
+    bild: new Image(),   
+}
+var chucky = {
+    x: Math.random()*1200,
+    y: 0,
+    bild: new Image(),   
+}
+var communicator = {
+    x: Math.random()*1200,
+    y: 0,
+    bild: new Image(),   
+}
+var freddy = {
+    x: Math.random()*1200,
+    y: 0,
+    bild: new Image(),   
+}
+var bender = {
+    x: Math.random()*1200,
+    y: 0,
+    bild: new Image(),   
+}
+var hunter = {
+    x: Math.random()*1200,
+    y: 0,
+    bild: new Image(),   
+}
+var saitama = {
+    x: 600,
+    y: 850,
+    bild: new Image()
+}
+mario.bild.src = "./pictures/icons8-super-mario-50.png"
+smith.bild.src = "./pictures/icons8-agent-smith-50.png"
+chucky.bild.src = "./pictures/icons8-chucky-50.png"
+communicator.bild.src = "./pictures/icons8-communicator-50.png"
+freddy.bild.src = "./pictures/icons8-freddy-krueger-50.png"
+bender.bild.src = "./pictures/icons8-futurama-bender-50.png"
+hunter.bild.src = "./pictures/icons8-matrix-hunter-50.png"
+saitama.bild.src = "./pictures/icons8-saitama-96.png"
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+function ritaFigur(x, y) {
+    ctx.fillStyle = "pink";
+    ctx.fillRect(x, y, 50, 50)
+    if (y > 1150) {
+        figurY  = 0
+        figurX = Math.random()*1200
+    }
+}
+function ritaMario() {
+   
+
+    ctx.drawImage(mario.bild, mario.x, mario.y)
+    if (mario.y > 1150) {
+        mario.y = 0
+        mario.x = Math.random()*1200
+    }
+}
+function ritaCommunicator() {
+   
+    ctx.drawImage(communicator.bild, communicator.x, communicator.y)
+    if (communicator.y > 1150) {
+        communicator.y = 0
+        communicator.x = Math.random()*1200
+    }
+}
+function ritaChucky() {
+   
+    ctx.drawImage(chucky.bild, chucky.x, chucky.y)
+    if (chucky.y > 1150) {
+        chuckyy = 0
+        chucky.x = Math.random()*1200
+    }
+}
+function ritaSmith() {
+   
+    ctx.drawImage(smith.bild, smith.x, smith.y)
+    if (smith.y > 1150) {
+        smith.y = 0
+        smith.x = Math.random()*1200
+    }
+}
+function ritaFreddy() {
+   
+    ctx.drawImage(freddy.bild, freddy.x, freddy.y)
+    if (freddy.y > 1150) {
+        freddy.y = 0
+        freddy.x = Math.random()*1
+    }
+}
+function ritaHunter() {
+   
+    ctx.drawImage(hunter.bild, hunter.x, hunter.y)
+    if (hunter.y > 1150) {
+        hunter.y = 0
+        hunter.x = Math.random()*1200
+    }
+}
+function ritaBender() {
+   
+    ctx.drawImage(bender.bild, bender.x, bender.y)
+    if (bender.y > 1150) {
+        bender.y = 0
+        bender.x = Math.random()*1200
+    }
+}
+function ritaSaitama() {
+   
+    ctx.drawImage(saitama.bild, saitama.x, saitama.y)
+}
+
+        /* Animationsloopen */
+        function loopen() {
+            ctx.clearRect(0,0,1200,1000)
+            key = event.keyCode
+            console.log(key);
+            
+            /* öka värdet på x */
+            figurY += 2
+              ritaFigur(figurX,figurY)
+            mario.y+= 2;
+            ritaMario()
+            communicator.y += 2
+            ritaCommunicator()
+            chucky.y += 2
+            ritaChucky()
+            smith.y += 2
+            ritaSmith()
+            freddy.y += 2 
+            ritaFreddy()
+            hunter.y += 2
+            ritaHunter()
+            bender.y+= 2
+            ritaBender()
+            ritaSaitama()
+            requestAnimationFrame(loopen);
+        }
+
+        
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+    </script>
+</body>
+</html>
