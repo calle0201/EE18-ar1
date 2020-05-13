@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./paralax.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ballons">
+            <img class="skrollE" data-rate="-0.5" src="../bilder/balloon.png" alt="ballon1">
+            <img class="skrollE" data-rate="-2" src="../bilder/balloon2.png" alt="ballon2">
+            <img class="skrollE" data-rate="-" src="../bilder/balloon3.png" alt="ballon3">
+        </div>
+        <div class="mid-clouds skrollE" data-rate="-2">
+<img src="../bilder/cloud-lg1.png" alt="large cloud">
+<img src="../bilder/cloud-lg1.png" alt="large cloud">
+<img src="../bilder/cloud-lg1.png" alt="large cloud">
+<img src="../bilder/cloud-lg1.png" alt="large cloud">
+<img src="../bilder/cloud-lg1.png" alt="large cloud">
+        </div>
+        <div class="back-clouds skrollE" data-rate="-0.7">
+            <img src="../bilder/cloud-sm1.png" alt="small cloud">
+            <img src="../bilder/cloud-sm1.png" alt="small cloud">
+            <img src="../bilder/cloud-sm1.png" alt="small cloud">
+            <img src="../bilder/cloud-sm1.png" alt="small cloud">
+            <img src="../bilder/cloud-sm1.png" alt="small cloud">
+        </div>
+    </div>
+    <script>
+        //elemenet
+        const eTaargets = document.querySelectorAll(".skrollE")
+
+
+        //lysna på scroll
+        window.addEventListener("scroll", function(e) {
+
+            //flytta alla element
+            eTaargets.forEach(function(element) {
+                var rate = element.dataset.rate;
+                var orientation = element.dataset.oreintation;
+
+                var distance = window.pageYOffset * rate;
+                //flytta på elementen
+                element.style.transform = 'translateY(' + distance + 'px)'
+
+               
+
+
+            })
+        });
+    </script>
+</body>
+</html>

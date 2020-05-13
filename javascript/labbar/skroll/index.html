@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="sida">
+        <ul>
+            <li class="skrollE" data-rate="-1" data-oreintation="v">par</li>
+            <li class="skrollE" data-rate="-2" data-oreintation="v">al</li>
+            <li>ax</li>
+        </ul>
+        <span class="skrollE" data-rate="0.5" data-oreintation=""></span>
+
+    </div>
+    <div class="sida">
+        <img src="../bilder/tunafish-mayonnaise-qtbjuRHMlTM-unsplash.jpg" alt="">
+    </div>
+    <script>
+        //elemenet
+        const eTaargets = document.querySelectorAll(".skrollE")
+
+
+        //lysna på scroll
+        window.addEventListener("scroll", function(e) {
+
+
+            //scroll check
+            console.log(window.pageYOffset);
+            //vad säger eTarget for 
+            //console.log(eTaarget.style);
+
+
+            //var distance = window.pageYOffset * -2 
+            //var distance2 = window.pageYOffset * 2 
+
+            //eTaarget.style.transform = 'translateY(' + distance + 'px)'
+
+
+            //flytta alla element
+            eTaargets.forEach(function(element) {
+                var rate = element.dataset.rate;
+                var orientation = element.dataset.oreintation;
+                if (orientation == 'v') {
+                    var distance = window.pageYOffset * rate;
+
+                    //flytta på elementen
+                    element.style.transform = 'translateY(' + distance + 'px)'
+                } else {
+                    var distance = window.pageYOffset * rate;
+                   
+                    element.style.transform = "translate3d(" + distance + "px, " + window.pageYOffset + "px, 0px)";
+                }
+
+            })
+        });
+    </script>
+</body>
+</html>

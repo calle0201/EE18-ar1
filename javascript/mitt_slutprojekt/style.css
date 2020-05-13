@@ -1,0 +1,53 @@
+@media screen and (max-width: 1920px) {
+body {
+     background: black;
+     margin: 0;
+}
+.container {
+    background-image: url(bilder/zmorph-multitool-3d-printer-UqCCSbAIaDU-unsplash.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.banner h1 {
+    margin-top: 350px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 70px;
+}
+}
+@media screen and (min-width: 1921px) {
+    body {
+        background: black;
+        margin: 0;
+   }
+ .container  .select a:link {
+       color: white;
+       background: black;
+       text-decoration: none;
+   }
+ .container  .select a:visited { 
+       color: white;
+       background: black;
+       text-decoration: none;
+   }
+
+   .container {
+       background-image: url(./bilder/stor.jpg);
+       height: 1000px;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+   }
+   
+   .banner h1 {
+       margin-top: 450px;
+       text-align: center;
+       font-family: sans-serif;
+       color: white;
+       font-size: 100px;
+   }
+}
