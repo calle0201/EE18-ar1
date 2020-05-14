@@ -5,26 +5,43 @@ body {
 }
 .container {
     background-image: url(./bilder/zmorph-multitool-3d-printer-UqCCSbAIaDU-unsplash.jpg);
-    height: 200px;
+    height: 2000px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.container  .select  {
-    color: white;
-    background: black;
+.container .select {
+ 
+    
+  
+    font-size: 35px;
     text-decoration: none;
-    padding: 20px;
     text-align: center;
+    margin-bottom: 15px;
 }
-.container  .select a:link {
-     
-    color: white;
+.container .select a:hover {
+    background: rgba(128, 128, 128, 0.582);
+    border: white solid 4px;
+}
+.container .select a {
+    color: rgba(0, 0, 0, 0.616);
+    background: rgba(255, 255, 255, 0.431);
+    padding: 14px 10px;
+    border: rgba(0, 0, 0, 0.555) solid 4px;
+    text-transform: capitalize;
     text-decoration: none;
-    padding: 0 20px;
+    margin: 0 -5px;
 }
-.container  .select a:visited { 
-    color: white;
-    padding: 0 20px;
-    text-decoration: none;
-}
+.container .select .selected {
+    background: rgba(128, 128, 128, 0.582);
+    border: rgba(255, 255, 255, 0.671) solid 4px;
+   }
+   .main {  
+       color: rgba(255, 255, 255, 0.918);
+       margin: auto;
+    background: rgba(0, 0, 0, 0.897);
+    width: 710px;
+    height: 90%;
+    font-size: 25px;
+    
+   }

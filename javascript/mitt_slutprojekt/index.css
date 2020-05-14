@@ -4,7 +4,7 @@
         margin: 0;
         font-family: sans-serif;
    }
-.container_index {
+.container {
     background-image: url(bilder/zmorph-multitool-3d-printer-UqCCSbAIaDU-unsplash.jpg);
     height: 1000px;
     background-repeat: no-repeat;
@@ -27,25 +27,32 @@
         font-family: sans-serif;
    }
    .container  .select  {
-    color: white;
-    background: black;
+ font-size: 35px;
     text-decoration: none;
-    padding: 20px;
     text-align: center;
 }
- .container  .select a:link {
-     
-       color: white;
-       text-decoration: none;
-       padding: 0 20px;
+
+   .container .select a:hover {
+   background: rgba(128, 128, 128, 0.582);
+   border: white solid 4px;
    }
- .container  .select a:visited { 
-       color: white;
-       padding: 0 20px;
-       text-decoration: none;
+   .container .select a {
+       color: rgba(0, 0, 0, 0.616);
+    background: rgba(255, 255, 255, 0.431);
+    padding:  14px  10px;
+    border: rgba(0, 0, 0, 0.555) solid 4px;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 0 -5px;
+   }
+   .container .select a {
+       
+    }
+   .container .select .selected {
+    background: rgba(128, 128, 128, 0.582);
+    border: rgba(255, 255, 255, 0.671) solid 4px;
    }
 
- 
    .container {
        background-image: url(./bilder/stor.jpg);
        height: 1000px;
