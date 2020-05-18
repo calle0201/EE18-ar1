@@ -1,0 +1,198 @@
+ffmpeg version 4.2.2 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 9.2.1 (GCC) 20200122
+  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libdav1d --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libaom --enable-libmfx --enable-amf --enable-ffnvcodec --enable-cuvid --enable-d3d11va --enable-nvenc --enable-nvdec --enable-dxva2 --enable-avisynth --enable-libopenmpt
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Calle/AppData/Local/Temp/KritaFFmpegProgress.fmJARI'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '10'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/gif1.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Calle/AppData/Local/Temp/KritaFFmpegProgress.fmJARI.
+[file @ 000001d5deb0b680] Setting default whitelist 'file,crypto'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 10.
+Successfully parsed a group of options.
+Opening an input file: F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame%04d.png.
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0000.png' for reading
+[file @ 000001d5deb4f100] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb572c0] Statistics: 1313079 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0001.png' for reading
+[file @ 000001d5deb57540] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb576c0] Statistics: 1314927 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0002.png' for reading
+[file @ 000001d5deb57600] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb57040] Statistics: 1318937 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0003.png' for reading
+[file @ 000001d5deb57600] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb57200] Statistics: 1323423 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Probe buffer size limit of 5000000 bytes reached
+Input #0, image2, from 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame%04d.png':
+  Duration: 00:00:00.84, start: 0.000000, bitrate: N/A
+    Stream #0:0, 4, 1/25: Video: png, 1 reference frame, rgba(pc), 1920x1080 [SAR 23622:23622 DAR 16:9], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/palette.png.
+Successfully parsed a group of options.
+Opening an input file: F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/palette.png.
+[NULL @ 000001d5deb4e280] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/palette.png' for reading
+[file @ 000001d5deb57600] Setting default whitelist 'file,crypto'
+[png_pipe @ 000001d5deb4e280] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 000001d5deb4e280] Before avformat_find_stream_info() pos: 0 bytes read:920 seeks:0 nb_streams:1
+[png_pipe @ 000001d5deb4e280] After avformat_find_stream_info() pos: 920 bytes read:920 seeks:0 frames:1
+Input #1, png_pipe, from 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/gif1.gif.
+Successfully parsed a group of options.
+Opening an output file: F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/gif1.gif.
+[file @ 000001d5deb54a00] Setting default whitelist 'file,crypto'
+Successfully opened the file.
+detected 6 logical cores
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 608 times
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0004.png' for reading
+[file @ 000001d5deb574c0] Setting default whitelist 'file,crypto'
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[AVIOContext @ 000001d5deb5fac0] Statistics: 1329022 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0005.png' for reading
+[file @ 000001d5deb574c0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1338022 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0006.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1349422 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0007.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1356703 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0008.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1354266 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0009.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1355004 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0010.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1352608 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0011.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1352676 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0012.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1354732 bytes read, 0 seeks
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0013.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1354570 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 000001d5deb4ba40] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0014.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1355510 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0015.png' for reading
+[file @ 000001d5deb66cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deb66ac0] Statistics: 1353241 bytes read, 0 seeks
+cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+    Last message repeated 1 times
+[graph 0 input from stream 0:0 @ 000001d5ded79080] Setting 'video_size' to value '1920x1080'
+[graph 0 input from stream 0:0 @ 000001d5ded79080] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 0:0 @ 000001d5ded79080] Setting 'time_base' to value '1/10'
+[graph 0 input from stream 0:0 @ 000001d5ded79080] Setting 'pixel_aspect' to value '23622/23622'
+[graph 0 input from stream 0:0 @ 000001d5ded79080] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 000001d5ded79080] Setting 'frame_rate' to value '10/1'
+[graph 0 input from stream 0:0 @ 000001d5ded79080] w:1920 h:1080 pixfmt:rgba tb:1/10 fr:10/1 sar:23622/23622 sws_param:flags=2
+[graph 0 input from stream 1:0 @ 000001d5deb68980] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 000001d5deb68980] Setting 'pix_fmt' to value '26'
+[graph 0 input from stream 1:0 @ 000001d5deb68980] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 000001d5deb68980] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 000001d5deb68980] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 1:0 @ 000001d5deb68980] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 000001d5deb68980] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1 sws_param:flags=2
+[format @ 000001d5debad040] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 000001d5debac740] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000001d5ded7e5c0] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 000001d5debac840] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000001d5ded7e5c0] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 000001d5debaa000] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 000001d5debb8900] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 000001d5debac740] w:1920 h:1080 fmt:rgba sar:23622/23622 -> w:1920 h:1080 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 000001d5dee34640] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 000001d5debac840] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 000001d5ded7e5c0] [framesync @ 000001d5dedb2c48] Selected 1/50 time base
+[Parsed_paletteuse_0 @ 000001d5ded7e5c0] [framesync @ 000001d5dedb2c48] Sync level 2
+Output #0, gif, to 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/gif1.gif':
+  Metadata:
+    encoder         : Lavf58.29.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 1920x1080 [SAR 1:1 DAR 16:9], 0/1, q=2-31, 200 kb/s, 10 fps, 100 tbn, 10 tbc (default)
+    Metadata:
+      encoder         : Lavc58.54.100 gif
+Clipping frame in rate conversion by 0.000008
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0016.png' for reading
+[file @ 000001d5debad240] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5deda0b80] Statistics: 1355721 bytes read, 0 seeks
+[gif @ 000001d5deb53480] 1920x1080 image at pos (0;0) [area:1920x1080]
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0017.png' for reading
+[file @ 000001d5debae040] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5e578e380] Statistics: 1354084 bytes read, 0 seeks
+[gif @ 000001d5deb53480] 1920x1080 image at pos (0;0) [area:1920x1080]
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0018.png' for reading
+[file @ 000001d5debae440] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5e578e380] Statistics: 1355190 bytes read, 0 seeks
+[gif @ 000001d5deb53480] 1920x1080 image at pos (0;0) [area:1920x1080]
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0019.png' for reading
+[file @ 000001d5debad540] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5e578dd00] Statistics: 1354530 bytes read, 0 seeks
+[gif @ 000001d5deb53480] 1920x1080 image at pos (0;0) [area:1920x1080]
+[image2 @ 000001d5deb4ba40] Opening 'F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame0020.png' for reading
+[file @ 000001d5debad440] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000001d5e578e8c0] Statistics: 1354530 bytes read, 0 seeks
+[gif @ 000001d5deb53480] 1920x1080 image at pos (0;0) [area:1920x1080]
+    Last message repeated 1 times
+frame=    7 fps=0.0 q=-0.0 size=    1280kB time=00:00:00.61 bitrate=17189.8kbits/s speed=1.11x    [gif @ 000001d5deb53480] 1920x1080 image at pos (0;0) [area:1920x1080]
+    Last message repeated 6 times
+frame=   14 fps= 13 q=-0.0 size=    2304kB time=00:00:01.31 bitrate=14407.9kbits/s speed=1.19x    [gif @ 000001d5deb53480] 1920x1080 image at pos (0;0) [area:1920x1080]
+    Last message repeated 5 times
+[gif @ 000001d5deb53480] 1x1 image at pos (1919;1079) [area:1920x1080]
+[Parsed_paletteuse_0 @ 000001d5ded7e5c0] [framesync @ 000001d5dedb2c48] Sync level 0
+frame=   21 fps= 13 q=-0.0 size=    3328kB time=00:00:02.01 bitrate=13563.7kbits/s speed=1.22x    [out_0_0 @ 000001d5debad140] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=   21 fps= 13 q=-0.0 Lsize=    3458kB time=00:00:02.01 bitrate=14093.0kbits/s speed=1.22x    
+[AVIOContext @ 000001d5deb4b7c0] Statistics: 0 seeks, 4 writeouts
+video:3458kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000565%
+Input file #0 (F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/frame%04d.png):
+  Input stream #0:0 (video): 21 packets read (28250197 bytes); 21 frames decoded; 
+  Total: 21 packets (28250197 bytes) demuxed
+Input file #1 (F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/palette.png):
+  Input stream #1:0 (video): 1 packets read (920 bytes); 1 frames decoded; 
+  Total: 1 packets (920 bytes) demuxed
+Output file #0 (F:/github/EE18B/EE18-ar2/javascript/mitt_slutprojekt/bilder/gif1.gif):
+  Output stream #0:0 (video): 21 frames encoded; 21 packets muxed (3540840 bytes); 
+  Total: 21 packets (3540840 bytes) muxed
+22 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 000001d5deb54b00] Statistics: 0 seeks, 14 writeouts
+[AVIOContext @ 000001d5deb56900] Statistics: 920 bytes read, 0 seeks

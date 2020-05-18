@@ -11,9 +11,6 @@ body {
     background-size: cover;
 }
 .container .select {
- 
-    
-  
     font-size: 35px;
     text-decoration: none;
     text-align: center;
@@ -37,11 +34,27 @@ body {
     border: rgba(255, 255, 255, 0.671) solid 4px;
    }
    .main {  
+      
+       text-align: center;
        color: rgba(255, 255, 255, 0.918);
        margin: auto;
     background: rgba(0, 0, 0, 0.897);
     width: 710px;
     height: 90%;
     font-size: 25px;
-    
+   }
+   .main h2   {
+       margin: 0;
+       padding-top: 20px;
+   }
+   .main h3   {
+       margin: 0;
+       padding-top: 20px;
+   }
+   .main p {
+       text-align: left;
+       margin-left: 15px;
+   }
+   .main img {
+       width: 70%;
    }
