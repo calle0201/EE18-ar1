@@ -11,29 +11,28 @@
     <script>
         //element 
         const eCanvas = document.querySelector("canvas")
-       
+
         //höjd och längd på canvas
         eCanvas.width = 800;
         eCanvas.height = 600;
 
         //ritmotorn
         var ctx = eCanvas.getContext("2d");
-    
-ctx.beginPath();
-ctx.strokeRect(100,100, 150, 100)
-ctx.fillStyle = 'darkred'
-ctx.fillRect(100, 150, 150, 50)
-ctx.fillStyle = 'darkblue'
-ctx.moveTo(100,100)
-ctx.lineTo(150,150)
-ctx.lineTo(100,200)
-ctx.fill()
 
-ctx.beginPath()
-ctx.fillStyle = 'black'
-ctx.arc(300, 150, 50,0, Math.PI * 2, true)
-ctx.stroke();
- 
+        ctx.beginPath();
+        ctx.strokeRect(100, 100, 150, 100)
+        ctx.fillStyle = 'darkred'
+        ctx.fillRect(100, 150, 150, 50)
+        ctx.fillStyle = 'darkblue'
+        ctx.moveTo(100, 100)
+        ctx.lineTo(150, 150)
+        ctx.lineTo(100, 200)
+        ctx.fill()
+
+        ctx.beginPath()
+        ctx.fillStyle = 'black'
+        ctx.arc(300, 150, 50, 0, Math.PI * 2, true)
+        ctx.stroke();
     </script>
 </body>
 </html>
