@@ -5,9 +5,11 @@ eCanvas.height = 400;
 
 //start canvas
 var ctx = eCanvas.getContext("2d");
+
+//elements used
 const buttonCube = document.getElementById("cube")
 
-
+//event listeners for buttons
 buttonCube.addEventListener("click", callCube)
 var i = 1
 
