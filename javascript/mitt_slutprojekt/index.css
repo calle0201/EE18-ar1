@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    text-align: center;
 }
 
 .banner h1 {
@@ -19,6 +20,23 @@
     color: white;
     font-size: 70px;
 }
+.container .select a:hover {
+    background: rgba(128, 128, 128, 0.582);
+    border: white solid 4px;
+    }
+    .container .select a {
+        color: rgba(0, 0, 0, 0.616);
+     background: rgba(255, 255, 255, 0.431);
+     padding:  14px  10px;
+     border: rgba(0, 0, 0, 0.555) solid 4px;
+     text-transform: capitalize;
+     text-decoration: none;
+     margin: 0 -5px;
+    }
+    .container .select .selected {
+        background: rgba(128, 128, 128, 0.582);
+        border: rgba(255, 255, 255, 0.671) solid 4px;
+       }
 }
 @media screen and (min-width: 1921px) {
     body {
@@ -45,9 +63,7 @@
     text-decoration: none;
     margin: 0 -5px;
    }
-   .container .select a {
-       
-    }
+ 
    .container .select .selected {
     background: rgba(128, 128, 128, 0.582);
     border: rgba(255, 255, 255, 0.671) solid 4px;

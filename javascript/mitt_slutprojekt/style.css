@@ -40,9 +40,17 @@ body {
        margin: auto;
     background: rgba(0, 0, 0, 0.897);
     width: 710px;
-    height: 90%;
+    height: 100%;
     font-size: 25px;
    }
+ .main  .contact {
+    margin: 5px 80px;
+    text-align: center;
+}
+ .main  .contact_info {
+    margin: 10px 80px;
+    text-align: center;
+}
    .main h2   {
        margin: 0;
        padding-top: 20px;
@@ -55,10 +63,20 @@ body {
        text-align: left;
        margin: 0 25px;
    }
+ .main  .printer img {
+    width: 75%;
+   
+}
+.main .printer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
    .main img {
        margin-top: 15px ;
        width: 50%;
    }
+
    button {
        background: rgba(255, 255, 255, 0.808);
        color: rgba(0, 0, 0, 0.637);
