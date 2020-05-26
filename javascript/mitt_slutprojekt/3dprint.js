@@ -18,7 +18,7 @@ buttonCircle.addEventListener("click", callCircle)
 //varibles 
 var i = 0
 var interval;
-
+var R = 100
 
 
 
@@ -118,13 +118,13 @@ function drawCube() {
 }
 function drawCircle() {
  i++
-      console.log(i);
+     
       
     if (i <= 52) {
         ctx.beginPath();
         ctx.lineWidth = 10
         //varför göra detta att det funkar gjorde mindre korade sätt och det funka inte
-        ctx.arc(200, 200, 100,0,i/8)
+        ctx.arc(200, 200, R,0,i/8)
         ctx.stroke()
     
         
@@ -133,6 +133,15 @@ function drawCircle() {
        
     } else {
         i = 0
+        R -= 10
+        console.log(R);
+        console.log(i);
+        
+        
+    }
+    if (R < 0) {
+        i = 0
+        R = 100
         clearInterval(interval);
     }
 }
