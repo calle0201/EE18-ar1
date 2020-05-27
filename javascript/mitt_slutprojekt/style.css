@@ -33,7 +33,7 @@
         margin: auto;
         background: rgba(0, 0, 0, 0.897);
         width: 410px;
-        height: 110%;
+        height: 100%;
         font-size: 25px;
         padding-bottom: 20px;
     }
@@ -83,7 +83,7 @@
         margin: 10px 20px;
         text-align: center;
     }
-   .main .contact {
+    .main .contact {
         text-align: center;
     }
     canvas {
@@ -104,11 +104,7 @@
         margin: 0;
         font-family: sans-serif;
     }
-    .container {
 
-        height: 2100px;
-
-    }
     .container .select {
         font-size: 35px;
         text-decoration: none;
@@ -141,6 +137,7 @@
         width: 710px;
         height: 110%;
         font-size: 25px;
+        padding-bottom: 20px;
     }
     .main h2 {
         margin: 0;

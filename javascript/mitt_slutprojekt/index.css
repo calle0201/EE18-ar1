@@ -1,4 +1,47 @@
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 762px) {
+    body {
+        background-image: url(bilder/zmorph-multitool-3d-printer-UqCCSbAIaDU-unsplash.jpg);
+        height: 700px;
+     background-position:  800px;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .container .select {
+        font-size: 35px;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .container .select a:hover {
+        background: rgba(128, 128, 128, 0.582);
+        border: white solid 4px;
+    }
+    .container .select a {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.616);
+        background: rgba(255, 255, 255, 0.431);
+        padding: 14px 10px;
+        border: rgba(0, 0, 0, 0.555) solid 4px;
+        text-transform: capitalize;
+        text-decoration: none;
+        margin: 0 -5px;
+    }
+        .container .select .selected {
+            background: rgba(128, 128, 128, 0.582);
+            border: rgba(255, 255, 255, 0.671) solid 4px;
+           }
+           .banner h1 {
+            margin-top: 350px;
+            text-align: center;
+            font-family: sans-serif;
+            color: white;
+            font-size: 70px;
+        }
+}
+@media screen and (min-width: 763px) {
     body {
         background: black;
         margin: 0;
@@ -40,7 +83,10 @@
 }
 @media screen and (min-width: 1921px) {
     body {
-        background: black;
+        background-image: url(./bilder/stor.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         margin: 0;
         font-family: sans-serif;
    }
@@ -69,13 +115,7 @@
     border: rgba(255, 255, 255, 0.671) solid 4px;
    }
 
-   .container {
-       background-image: url(./bilder/stor.jpg);
-       height: 1000px;
-       background-repeat: no-repeat;
-       background-attachment: fixed;
-       background-size: cover;
-   }
+
 
    .banner h1 {
        margin-top: 450px;
