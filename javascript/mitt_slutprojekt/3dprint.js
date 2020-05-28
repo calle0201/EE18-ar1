@@ -9,21 +9,40 @@ var ctx = eCanvas.getContext("2d");
 //elements used / buttons
 const buttonCube = document.getElementById("cube");
 const buttonTriangle = document.getElementById("tringle");
-const buttonCircle = document.getElementById("circle")
+const buttonCircle = document.getElementById("circle");
+const buttonRandom = document.getElementById("random");
 
 //event listeners for buttons
-buttonCube.addEventListener("click", callCube)
-buttonTriangle.addEventListener("click", callTriangle)
-buttonCircle.addEventListener("click", callCircle)
+buttonCube.addEventListener("click", callCube);
+buttonTriangle.addEventListener("click", callTriangle);
+buttonCircle.addEventListener("click", callCircle);
+buttonRandom.addEventListener("click", callRandom);
 //varibles 
 var i = 0
 var interval;
 var R = 100
 
 
-
+function callRandom() {
+    document.getElementById("random").disabled = true
+    setTimeout(function(){document.getElementById("random").disabled = false;},10000);
+    var randomNum = Math.ceil(Math.random() * 3);
+    ctx.clearRect(0, 0, eCanvas.width * 2, eCanvas.height * 2);
+    ctx.beginPath();
+    clearInterval(interval);
+    if (randomNum == 1) {
+        interval = setInterval(drawCircle, 40)
+    } else if (randomNum == 2) {
+        interval = setInterval(drawCube, 10)
+    } else if (randomNum == 3) {
+        interval = setInterval(drawTriangle, 10);
+    }
+}
 
 function callCircle() {
+    //kod jag gjorde om från inteernet för att passa mitt mål
+    document.getElementById("circle").disabled = true
+    setTimeout(function(){document.getElementById("circle").disabled = false;},10000);
     ctx.clearRect(0, 0, eCanvas.width * 2, eCanvas.height * 2);
     ctx.beginPath();
     clearInterval(interval);
@@ -32,6 +51,9 @@ function callCircle() {
 }
 
 function callCube() {
+    //kod jag gjorde om från inteernet för att passa mitt mål
+    document.getElementById("cube").disabled = true
+    setTimeout(function(){document.getElementById("cube").disabled = false;},10000);
     //clears earlier layers
     ctx.clearRect(0, 0, eCanvas.width * 2, eCanvas.height * 2);
     ctx.beginPath();
@@ -41,6 +63,11 @@ function callCube() {
 }
 
 function callTriangle() {
+    //kod jag gjorde om från inteernet för att passa mitt mål 
+    console.log("test");
+    
+    document.getElementById("tringle").disabled = true
+    setTimeout(function(){document.getElementById("tringle").disabled = false;},2500);
     //clears earlier layers
     ctx.clearRect(0, 0, eCanvas.width * 2, eCanvas.height * 2);
 
@@ -53,6 +80,7 @@ function callTriangle() {
 
 
 function drawTriangle() {
+  
     //start the layer of a triangle
     if (i < 10) {
         i = 199

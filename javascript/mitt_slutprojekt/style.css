@@ -1,7 +1,8 @@
 @media screen and (max-width: 762px) {
     body {
         background-image: url(./bilder/zmorph-multitool-3d-printer-UqCCSbAIaDU-unsplash.jpg);
-        background-repeat: no-repeat;
+        background-position:  800px;
+       
         background-attachment: fixed;
         background-size: cover;
         margin: 0;
@@ -86,6 +87,14 @@
     .main .contact {
         text-align: center;
     }
+    .buttons {
+        column-gap: 10px;
+        max-width: 360px;
+      margin: auto;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+       
+    }
     canvas {
         margin-top: 20px;
         width: 400px;
@@ -129,7 +138,7 @@
         border: rgba(255, 255, 255, 0.671) solid 4px;
     }
     .main {
-
+border-radius: 5px;
         text-align: center;
         color: rgba(255, 255, 255, 0.918);
         margin: auto;
@@ -189,6 +198,29 @@
     .main .printer img {
         width: 75%;
         border-radius: 4px;
+    }
+    .button1 {
+        grid-area: button1;
+    }
+    .button2 {
+        grid-area: button2;
+    }
+    .button3 {
+        grid-area: button3;
+    }
+    .button4 {
+        grid-area: button4;
+    }
+    .buttons {
+        column-gap: 10px;
+        max-width: 510px;
+      margin: auto;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas:
+        "button1 button2 button3"
+        " . button4 ."
+        ;
     }
 
 
